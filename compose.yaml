@@ -1,0 +1,9 @@
+services:
+  sklearn:
+    build: .
+    tty: true
+    stdin_open: true
+    ports:
+      - "8888:8888"
+    volumes:
+      - "./app:/home/sklearn/app"
